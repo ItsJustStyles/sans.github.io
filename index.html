@@ -88,7 +88,7 @@
 	<script>
     // Inicializar WebSocket si no existe
     if (!window.gameSocket) {
-        window.gameSocket = new WebSocket("wss://oceanica-xt98.onrender.com/"); // tu servidor WS
+        window.gameSocket = new WebSocket("https://oceanica-xt98.onrender.com/"); // tu servidor WS
 
         window.gameSocket.onopen = () => console.log("Conectado al servidor WebSocket");
         window.gameSocket.onerror = e => console.error("Error WS", e);
